@@ -39,6 +39,10 @@ class User:
      # Testing login with correct credentials (user1)
         user1.login(user1)
 
+        # Testing login with incorrect credentials (user2)
+        user1.login(user2)
+
+
     
 
         
