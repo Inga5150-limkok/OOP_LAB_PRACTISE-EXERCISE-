@@ -26,25 +26,19 @@ class User:
             # Else if any is wrong, print "Access denied."
             print("Access denied.")
 
-    # --- Example Usage ---
 
-    # Creating two user instances
-        user1 = User("Alice", "amkam@lenosol.com", "1234")
-        user2 = User("Bob", "bob@example.com", "password567")
+# --- Example Usage ---
 
-    # Testing the greet_user method (Alice greets Bob)
-        user1.greet_user(user2)
+# Creating two user instances
+user1 = User("Alice", "amkam@lenosol.com", "1234")
+user2 = User("Bai Inga", "bob@example.com", "password567")
 
-        print("\n--- Testing Login ---")
-     # Testing login with correct credentials (user1)
-        user1.login(user1)
+# Testing the greet_user method (Alice greets Bob)
+user1.greet_user(user2)
 
-        # Testing login with incorrect credentials (user2)
-        user1.login(user2)
+print("\n--- Testing Login ---")
+# Testing login with correct credentials (user1)
+user1.login(user1)
 
-
-    
-
-        
-
-    
+# Testing login with incorrect credentials (user2)
+user1.login(user2)
