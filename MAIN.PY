@@ -32,6 +32,15 @@ class User:
         user1 = User("Alice", "amkam@lenosol.com", "1234")
         user2 = User("Bob", "bob@example.com", "password567")
 
+    # Testing the greet_user method (Alice greets Bob)
+        user1.greet_user(user2)
+
+        print("\n--- Testing Login ---")
+     # Testing login with correct credentials (user1)
+        user1.login(user1)
+
+    
+
         
 
     
