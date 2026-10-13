@@ -26,3 +26,12 @@ class User:
             # Else if any is wrong, print "Access denied."
             print("Access denied.")
 
+    # --- Example Usage ---
+
+    # Creating two user instances
+        user1 = User("Alice", "amkam@lenosol.com", "1234")
+        user2 = User("Bob", "bob@example.com", "password567")
+
+        
+
+    
