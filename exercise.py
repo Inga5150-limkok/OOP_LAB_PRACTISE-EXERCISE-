@@ -21,7 +21,7 @@ class User:
 # 1. Pre-declaring the correct user data directly in the script
 # (This acts as "database" record)
 registered_user_1 = User("amkam", "amkam@lenosol.com", "1234")
-registered_user_2 = User("inga", "inga@portloko.com", "1234")
+registered_user_2 = User("inga", "inga@5150.sl", "1234")
 
 
 print("=== LOGIN SYSTEM ===")
