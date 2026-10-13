@@ -8,9 +8,9 @@ class User:
         self.password = password
 
     # 2. Method to verify prompt inputs against the declared attributes
-    def check_credentials(self, input_username, input_password):
-        # Checks if the user's typed input matches the declared name and password
-        if input_username == self.username and str(input_password) == str(self.password):
+    def check_credentials(self, input_email, input_password):
+        # Checks if the user's typed input matches the declared email and password
+        if input_email == self.email and str(input_password) == str(self.password):
             print(f"\nHello {self.username}, you're logged in successfully!")
         else:
             print("\nAccess denied. Username or password does not match.")
@@ -27,15 +27,15 @@ registered_user_2 = User("inga", "inga@portloko.com", "1234")
 print("=== LOGIN SYSTEM ===")
 
 # 2. Prompts requesting the user to type their credentials
-typed_username = input("Enter your username: ")
+typed_email = input("Enter your Email: ")
 typed_password = input("Enter your password: ")
 
 
 # 3. Automatically matches the input against the declared data
 for registered_user in (registered_user_1, registered_user_2):
-    if (typed_username == registered_user.username
+    if (typed_email == registered_user.email
             and typed_password == str(registered_user.password)):
-        registered_user.check_credentials(typed_username, typed_password)
+        registered_user.check_credentials(typed_email, typed_password)
         break
 else:
     print("\nAccess denied. Username or password does not match.")
